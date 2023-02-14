@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your favourite music is here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class = "brand"><img src="logo.png" alt="spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songlist">
+            <h1>Best of BTS</h1>
+            <div class="songitemcontainer">
+            <div class="songitem">
+                <img src="covers/1.png" alt="1">
+                <span>Boy With Luv(feat. Halsey)</span>
+                <span class="songlistplay"><span class="timestamp">3:49<i id="1" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img src="covers/2.jpeg" alt="2">
+                <span class="songName">Blood Sweat and Tears</span>
+                <span class="songlistplay"><span class="timestamp">3:37<i id="2" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img src="covers/3.jpg" alt="3">
+                <span class="songName">Fake Love</span>
+                <span class="songlistplay"><span class="timestamp">4:02<i id="3" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img src="covers/4.jpg" alt="4">
+                <span class="songName">Dynamite</span>
+                <span class="songlistplay"><span class="timestamp">3:19<i id="4" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img src="covers/5.jpg" alt="5">
+                <span class="songName">Spring Day</span>
+                <span class="songlistplay"><span class="timestamp">4:34<i id="5" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img src="covers/6.png" alt="6">
+                <span class="songName">Butter</span>
+                <span class="songlistplay"><span class="timestamp">2:44<i id="6" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songitem">
+                <img src="covers/7.jpeg" alt="7">
+                <span class="songName">Run BTS</span>
+                <span class="songlistplay"><span class="timestamp">3:24<i id="7" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+        </div>
+        </div>
+        <div class="songbanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="progressbar" min="0" max="100" value="0">       <!--slider-->
+        <div class="icons">
+            <!--font awesome icons-->
+            <i class="fa-solid fa-3x fa-backward-step" id="previous"></i>
+            <i class="fa-regular songItemPlay fa-3x fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-3x fa-forward-step" id="next"></i>
+        </div>
+        <div class="songinfo">
+            <img src="sound.gif" width="42px" alt="play" id="gif"> <span id="masterSongName">Boy With Luv - BTS ft. Halsey</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/849e3586a6.js" crossorigin="anonymous"></script>
+    <script src="scipt.js"></script>
+</body>
+</html>
